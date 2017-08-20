@@ -1,4 +1,259 @@
+@font-face {
+    font-family: 'Museo';
+    src: url('./fonts/museo/Museo700-Regular.ttf');
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #7d7d7d;
+}
 html, body {
     height: 100%;
     width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Museo', Rockwell, Serif;
+    color: #333333;
+}
+a {
+    color: #fb2f3a;
+    
+}
+a:hover, a:focus {
+    color: #eb2f39;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+.btn {
+    border-radius: 3px;
+    background: #9a9c9f;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: none;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+.btn-default:hover, .btn-default:focus {
+background: #8e9093;
+color: white;
+border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.heading {
+    margin-bottom: 20px;
+}
+.jumbotron {
+    padding: 0;
+    background: #222 url('./img/background.jpg') no-repeat 50% top;
+    margin-bottom: 0;
+}
+.navbar {
+    margin-top: 30px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.navbar .nav {
+    padding: 0;
+    margin: 0;
+}
+.navbar-brand {
+    padding-left: 0;
+    text-indent: -9999px;
+    background: url('./img/Logo.png') no-repeat;
+    height: 57px;
+    width: 127px;
+}
+.navbar-brand:hover {
+    border-bottom: none;
+}
+.navbar-default .navbar-nav > li > a {
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: none;
+    color: white;
+    padding: 3px 20px;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: none;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 3px;
+}
+/** end navbar **/
+
+.jumbotron-inner h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 48px;
+    color: white;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+.jumbotron-inner h4 {
+    margin-bottom: 30px;
+    color: #cccccc;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+.jumbotron-inner a {
+    color: white;
+    margin-left: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.jumbotron-inner img {
+    margin-top: 40px;
+}
+.jumbotron-inner .btn-primary {
+    background: #fb2f3a;
+    border: none;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+}
+/** process **/
+.h-line {
+    max-height: 5px;
+    background: url('./img/h-line.jpg') repeat-x;
+    border-radius: 3px;
+    position: relative;
+    top: 55px;
+    z-index: -1;
+}
+#process {
+    background: #eeeeee;
+    border-bottom: #9a9c9f;
+    border-top: 1px solid white;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10;
+    padding: 60px 0;
+}
+.process-icon {
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: transparent url('./img/process-sprite.png') no-repeat;
+    background-position: left top;
+}
+/** end process **/
+
+/** portfolio **/
+#portfolio {
+    padding: 60px 0;
+}
+.title {
+    margin-bottom: 0;
+}
+.category {
+    font-size: 12px;
+    color: #999999;
+}
+/** partners **/
+#partners {
+    padding: 60px 0;
+    border-bottom: 1px solid #ddd;
+}
+/** widgets **/
+#widgets {
+    padding: 50px 0 60px 0;
+    border-bottom: 1px solid #ddd;
+}
+.testimonials blockquote {
+    overflow: hidden;
+    border: none;
+    padding-top: 0;
+}
+.testimonials blockquote p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #7d7d7d;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.testimonials blockquote cite {
+    color: #333;
+}
+.blog-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.blog-list li, .tweet-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+.blog-list li:first-child, .tweet-list li:first-child {
+    padding-top: 0;
+}
+.blog-list li:last-child, .tweet-list li:last-child  {
+border: 0;
+}
+.blog-list h5 {
+    margin: 0;
+    padding: 0;
+}
+.blog-list h5 a {
+    color: #333;
+}
+.blog-list h5 a:hover {
+    color: #444;
+}
+.tweet-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.tweet-list img {
+    margin-right: 20px;
+}
+/** footer **/
+footer {
+    padding: 60px 0;
+}
+.footer-links {
+    list-style: none;
+    display: table;
+    margin: 0 auto;
+}
+.footer-links li {
+    float: left;
+    margin-right: 40px;
+}
+.footer-links li a {
+    color: #666666;
+    font-size: 12px;
+}
+#social {
+    clear: both;
+    margin-bottom: 30px;
+}
+.twitter {
+background: #569ccd;
+margin-right: 5px;
+}
+.twitter:hover, .twitter:focus {
+    background: #4f91bf;
+}
+.facebook {
+background: #2272a9;
+}
+.facebook:hover, .facebook:focus {
+    background: #20699c;
+}
+.social-sprite {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: transparent url('./img/social-sprite.png') no-repeat;
+    background-position: left top;
+}
+.social-sprite.facebook {
+    background-position: -16px top;
 }
