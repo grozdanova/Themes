@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dipped</title>
 
-    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap v3.3.7/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -14,31 +14,73 @@
     <section class="jumbotron">
         <div class="container">
             <nav class="navbar navbar-default">
-                <a class="navbar-brand" href="#">Dipped</a>
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Dipped</a>
+                </div><!-- end navbar-header -->
+
+                <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                    <nav class="navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </nav>
                 </div>
+
+
             </nav>
 
-            <div class="jumbotron-inner text-center">
-                <h1>We build well designed websites</h1>
-                <h4>Class aptent taciti sociosqu ad litora torquent per conubia nostra.</h4>
-                <a href="#" class="btn btn-primary">Get Started!</a>
-                <a href="#">Learn More</a>
-                <img src="./img/Browser.png" alt="Browser image" />
-            </div><!--end jumbotron-inner-->
+            <div id="bannerCarousel" class="carouselBanner slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="jumbotron-inner text-center">
+                            <h1>We build well designed websites</h1>
+                            <h4>Class aptent taciti sociosqu ad litora torquent per conubia nostra.</h4>
+                            <a href="#" class="btn btn-primary">Get Started!</a>
+                            <a href="#">Learn More</a>
+                            <img src="./img/Browser.png" alt="Browser image" class="img-responsive" />
+                        </div><!--end jumbotron-inner-->
+                    </div><!--end item active -->
+                    <div class="item">
+                        <div class="jumbotron-inner text-center">
+                            <h1>We build well designed websites</h1>
+                            <h4>Class aptent taciti sociosqu ad litora torquent per conubia nostra.</h4>
+                            <a href="#" class="btn btn-primary">Get Started!</a>
+                            <a href="#">Learn More</a>
+                            <img src="./img/Browser.png" alt="Browser image" class="img-responsive" />
+                        </div><!--end jumbotron-inner-->
+                    </div><!--end item -->
+                    <div class="item">
+                        <div class="jumbotron-inner text-center">
+                            <h1>We build well designed websites</h1>
+                            <h4>Class aptent taciti sociosqu ad litora torquent per conubia nostra.</h4>
+                            <a href="#" class="btn btn-primary">Get Started!</a>
+                            <a href="#">Learn More</a>
+                            <img src="./img/Browser.png" alt="Browser image" class="img-responsive" />
+                        </div><!--end jumbotron-inner-->
+                    </div><!--end item -->
+                </div><!--end carousel-inner -->
+                <!-- Controls -->
+                    <a class="left carousel-control" data-slide="prev" href="#bannerCarousel">&lsaquo;</a>
+                    <a class="right carousel-control" data-slide="next" href="#bannerCarousel">&rsaquo;</a>
+ 
+            </div><!--end bannerCarousel -->
+
         </div><!--end container-->
     </section><!--end jumbotron-->
 
     <section id="process">
         <div class="container">
             <div class="row">
-                <div class="h-line">&nbsp;</div>
+                <div class="h-line visible-md-block visible-lg-block">&nbsp;</div>
                 <div class="col-md-3">
                     <div class="plan text-center">
                         <span class="process-icon iplan">&nbsp;</span>
@@ -82,27 +124,27 @@
     <section id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 ">
+                <div class="col-md-3 p-item">
                     <h4 class="heading">Portfolio</h4>
                     <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
                         lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
                     <a href="#">Our Portfolio</a>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center p-item">
                     <div>
                         <img src="./img/thumb-1.png" class="img-thumbnail"/>
-                        <h5 class="title">1stwebdesigner</h5>
+                        <h5 class="title">Best web designer</h5>
                         <small class="category">Web Design</small>
                     </div>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center p-item">
                     <div>
                         <img src="./img/thumb-2.png" class="img-thumbnail"/>
                         <h5 class="title">Arvie</h5>
                         <small class="category">Web Design</small>
                     </div>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center p-item">
                     <div>
                         <img src="./img/thumb-3.png" class="img-thumbnail"/>
                         <h5 class="title">LabZip</h5>
@@ -116,18 +158,18 @@
     <section id="partners">
             <div class="container">
             <div class="row">
-                <span class="col-md-3 text-center">
+                <div class="col-md-3 text-center">
                 <img src="./img/partner-1.png" alt="partner-1"/>
-                </span>
-                <span class="col-md-3 text-center">
+                </div>
+                <div class="col-md-3 text-center">
                 <img src="./img/partner-2.png" alt="partner-2"/>
-                </span>
-                <span class="col-md-3 text-center">
+                </div>
+                <div class="col-md-3 text-center">
                 <img src="./img/partner-3.png" alt="partner-3"/>
-                </span>
-                <span class="col-md-3 text-center">
+                </div>
+                <div class="col-md-3 text-center">
                 <img src="./img/partner-4.png" alt="partner-4"/>
-                </span>
+                </div>
             </div><!--end row-->
         </div><!--end container-->
     </section><!--end partners-->
@@ -212,6 +254,23 @@
             </div><!--end row-->
         </div><!--end container--> 
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./bootstrap v3.3.7/js/bootstrap.js"></script>
+    <script>
+    $(function() {
+        $('.carouselBanner').carousel()
+    });
+
+    $('.carousel-control').click(function(e){
+        e.stopPropagation();
+        var goTo = $(this).data('slide');
+        if(goTo=="prev") {
+            $('#bannerCarousel').carousel('prev'); 
+        } else {
+            $('#bannerCarousel').carousel('next'); 
+        }
+    });
+    </script>
 </body>
 
 </html>

@@ -58,6 +58,7 @@ border: 1px solid rgba(0, 0, 0, 0.2);
 .navbar .nav {
     padding: 0;
     margin: 0;
+    margin-top: 10px;
 }
 .navbar-brand {
     padding-left: 0;
@@ -88,6 +89,23 @@ border: 1px solid rgba(0, 0, 0, 0.2);
 }
 /** end navbar **/
 
+/** Banner **/
+.carousel-control {
+    border-radius: 0;
+    border: none;
+    font-size: 32px;
+    width: 30px;
+    height: 60px;
+    line-height: 55px;
+    top: 45%;
+    background: #000;
+    opacity: 0.7;
+}
+.carousel-control:hover {
+    border: none;
+}
+/** end banner **/
+
 .jumbotron-inner h1 {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -106,7 +124,10 @@ border: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid #ddd;
 }
 .jumbotron-inner img {
-    margin-top: 40px;
+    margin-top: 30px; 
+}
+.img-responsive {
+    margin: 0 auto;
 }
 .jumbotron-inner .btn-primary {
     background: #fb2f3a;
@@ -256,4 +277,33 @@ background: #2272a9;
 }
 .social-sprite.facebook {
     background-position: -16px top;
+}
+
+/** portrait tablet to landscape and desktop **/
+@media (min-width: 768px) and (max-width: 979px) {
+    .navbar .nav {
+        margin-bottom: 20px;
+    }
+    .container {
+        padding: 0;
+    }
+}
+/** landscape phone to portrait tablet **/
+@media (max-width: 767px) {
+    .navbar .nav {
+        margin-bottom: 20px;
+    }
+    .container {
+        padding: 0;
+    }
+    .jumbotron-inner {
+        padding: 0 30px;
+    }
+    .plan, .design, .develop, .launch, .testimonials, .blog, .tweets, .p-item {
+        margin-bottom: 40px;
+        padding: 0 40px;
+    }
+    #partners img {
+        margin-bottom: 40px;
+    }
 }
