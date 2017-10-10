@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('./fonts/gotham rounded/gotham-rounded-light.otf');
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.jumbotron {
+    padding: 0;
+    background: #222 url('./images/BG.jpg') no-repeat 50% top;
+    margin-bottom: 0;
+}
+
+.nav {
+    margin-top: 35px;
+    margin-bottom: 240px;
+    background: transparent;
+}
+
+.nav > li > a {
+    color: white;
+        padding: 6px 35px;
+        font-size: 18px;
+        font-family: 'Gotham Rounded';
+}
+.nav > li > a:hover {
+text-decoration: underline;
+}
+.logo {
+    margin-top: -20px;
+    vertical-align: middle;
+}
+.description > h1 {
+    font-size: 36px;
+    font-family: "Gotham Rounded";
+    color: white;
+    font-weight: bold;
+}
+.description > p{
+  font-size: 16px;
+  font-family: "Gotham Rounded";
+  color: white;
+}
+.description > button, #rappresent > button, #design > button {
+    color: white;
+    border-radius: 3px;
+    background-color: rgb( 22, 160, 133 );
+    border:0px;
+    padding: 15px 34px;
+    font-family: "Gotham Rounded";
+    margin-top: 10px;
+}
+.description > button:hover {
+    background-color: white;
+    color: rgb( 22, 160, 133 );
+    transition: all 0.5s;
+}
+#rappresent > button:hover, #design > button:hover, .btn-primary:hover {
+        background-color: white;
+    color: rgb( 22, 160, 133 );
+    transition: all 0.5s;
+    border: 1px solid rgb( 22, 160, 133 ) !important;
+}
+.social-icons{
+    margin-top: 260px;
+    padding-bottom: 20px;
+}
+.social-icons > img{
+    margin:5px;
+}
+.reppresent{
+    background-color: #F5F6F7;
+}
+.iPhone {
+    margin-top: 90px;
+}
+#rappresent {
+    margin-top: 110px;
+    max-width: 425px;
+}
+#rappresent > h5, #design > h5 {
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #00A185;
+    font-family: "Gotham Rounded";
+}
+#rappresent > p, #design > p {
+    font-family: "Gotham Rounded";
+    text-align: left;
+    font-size: 14px;
+    color: #373737;
+    margin: 45px 0 45px 0;
+}
+.strong {
+    color: black;
+}
+.design {
+    margin-top: 145px;
+}
+#design {
+    max-width: 385px;
+}
+.community{
+    background-color: #f5f6f7;
+}
+.photo {
+    margin-top: 165px;
+}
+.community h6 {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #373737;
+    font-family: "Gotham Rounded";
+    margin: 30px 0 25px 0;
+}
+.col-9 img {
+    margin: 120px 25px 118px 0;;
+}
+.subscribe {
+    background: #222 url('./images/subscribe.jpg') no-repeat 50% top;
+    margin: 0;
+}
+#subscribe h3 {
+    padding: 352px 0 34px 0;
+    color: white;
+    font-weight: bold;
+    font-family: "Gotham Rounded";
+    letter-spacing: 3px;
+}
+.input-group {
+    max-width: 340px;
+    margin: 0 auto;
+    padding-bottom: 325px;
+}
+input[type="text"]::-webkit-input-placeholder, .download h5, .download p {
+    color: #343434;
+    font-weight: bold;
+    font-family: "Gotham Rounded";
+    letter-spacing: 2px;
+}
+.check {
+    background-color: #00A185;
+     margin-left: -50px;
+    border: 0;
+    -webkit-appearance: none;
+}
+.download {
+    background-color: #F5F6F7;
+    padding: 90px 0 115px 0;
+}
+.download p {
+    text-transform: uppercase;
+    max-width: 845px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    letter-spacing: normal;
+}
+
+.btn-primary {
+        height: 54px;
+    line-height: 54px;
+    max-width: 300px;
+    background-color: #00BD9C;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 25px !important;
+
+}
+
+.btn-primary span {
+      padding-left: 25px;
+      padding-right: 25px;
+      display: inline-block;
+}
+.btn-primary i {
+      display: inline-block;
+      font-size: 20px;
+      color: white;
+      background-color: #00A185;
+      padding: 17px 20px;
+}
+.footer-links{
+    list-style: none;
+    padding: 45px 0 0 0;
+}
+.footer-links li {
+    float: left;
+}
+.footer-links li a {
+    color: #343434;
+}
+.vertical-line {
+    color: #00A185;
+    margin: 0 8px 0 5px;
+    font-weight: bold;
+}
+.brand {
+    margin: -80px 0 40px 0;
+}
+
